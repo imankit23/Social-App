@@ -46,14 +46,7 @@ This app is built using **React.js**, **Node.js**, and integrates with **Spotify
   
 - **APIs Integrated:** 
   - Spotify API (for music streaming)
-  
-- **Database:** 
-  - Firebase (for storing user data, playlists, etc.)
-  
-- **Other tools:**
-  - Babel (JavaScript compiler)
-  - Webpack (module bundler)
-  
+
 ## Installation
 
 Follow these steps to install and set up the project on your local machine.
@@ -70,11 +63,26 @@ Follow these steps to install and set up the project on your local machine.
    git clone https://github.com/yourusername/Social-App.git
 
 2. Navigate to the project directory:
+   ```bash
+   cd Social-App
+   npm install
+   REACT_APP_SPOTIFY_CLIENT_ID=your_spotify_client_id
+   REACT_APP_SPOTIFY_CLIENT_ID=your_spotify_client_id
+   REACT_APP_SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
+   REACT_APP_FIREBASE_API_KEY=your_firebase_api_key
+   npm start
 
-```bash
-  cd Social-App
-npm install
-REACT_APP_SPOTIFY_CLIENT_ID=your_spotify_client_id
-REACT_APP_SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
-REACT_APP_FIREBASE_API_KEY=your_firebase_api_key
-npm start
+
+
+
+
+This will run the application locally at http://localhost:3000.
+
+### Usage
+   -Once the app is running, you can use the following features:
+
+    -Sign Up/Login: Users can sign up and log in using their credentials. (For now, using Firebase Authentication)
+    -Search for Music: Use the search bar to find music by artist, song, or album.
+    -Create Playlists: Users can create and share playlists with friends.
+    -Music Streaming: Stream music directly from Spotify via API integration.
+    -Follow Friends: Users can follow other users and see what they are listening to in real-time.
