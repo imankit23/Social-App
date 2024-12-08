@@ -33,7 +33,7 @@ export default function AudioPLayer({
       } else {
         setTrackProgress(audioRef.current.currentTime);
       }
-    }, [1000]);
+    }, 1000);
   };
 
   useEffect(() => {
@@ -55,7 +55,7 @@ export default function AudioPLayer({
         audioRef.current.pause();
       }
     }
-  }, [isPlaying]);
+  }, [isPlaying, audioSrc, startTimer]); // Added audioSrc and startTimer to dependencies
 
   useEffect(() => {
     audioRef.current.pause();
@@ -70,7 +70,7 @@ export default function AudioPLayer({
     } else {
       isReady.current = true;
     }
-  }, [currentIndex]);
+  }, [currentIndex, audioSrc, startTimer]); // Added audioSrc and startTimer to dependencies
 
   useEffect(() => {
     return () => {
