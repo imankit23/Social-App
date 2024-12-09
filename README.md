@@ -9,8 +9,7 @@ A Social Music App that allows users to listen to music, interact with their fri
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
+
 
 ## About
 
